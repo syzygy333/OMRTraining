@@ -1,0 +1,11 @@
+<% unless user_signed_in? %>
+	<div class="hero-unit">
+		<h1>Welcome to Bandtree</h1>
+		<p>
+			Build and explore music genealogies using your favorite artists and bands from your collection or search our database.
+		</p>
+		<p> 
+			<%= link_to "Help grow the tree!", new_user_registration_path, class: "btn btn-success btn-large" %>
+		</p>
+	</div>
+	<% end %>
