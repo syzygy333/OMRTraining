@@ -1,0 +1,8 @@
+<div class="well">
+	<h1><%= @user.name %></h1>
+
+	<div id="pins">
+		<%= render @pins %>
+	</div>
+</div>
+<%= will_paginate @pins %>
